@@ -1,0 +1,66 @@
+python-agate (1.6.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ Scott Talbert ]
+  * Update to new upstream release 1.6.3
+  * Add locales BD to fix tests
+
+ -- Scott Talbert <swt@techie.net>  Thu, 11 Nov 2021 18:32:23 -0500
+
+python-agate (1.6.1-1) unstable; urgency=medium
+
+  [ Andrius Merkys ]
+  * Team upload.
+  * New upstream version 1.6.1
+  * Refreshing No-privacy-breach.patch.
+  * Dropping upstream-integrated Fix-typo-in-shebang.patch.
+  * Dropping upstream-integrated Remove-absent-reference-from-the-docs.patch.
+  * Setting LC_NUMERIC for dh_auto_test.
+  * Removing unused python-agate-doc.lintian-overrides.
+  * Adding 'Rules-Requires-Root: no'.
+  * Forwarding of patches is not needed.
+  * Setting LC_NUMERIC also for autopkgtest.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 10 to 12.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 17 Aug 2020 11:10:40 -0400
+
+python-agate (1.6.0-3) unstable; urgency=medium
+
+  * Bump standards version to 4.0.0, no changes required
+  * Release to unstable
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Wed, 12 Jul 2017 10:39:20 +0100
+
+python-agate (1.6.0-2) experimental; urgency=medium
+
+  * Force use of UTF-8 locale when running the tests
+  * Fixup the watch regex
+  * Build the docs using the upstream Makefile
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Fri, 26 May 2017 11:26:58 +0100
+
+python-agate (1.6.0-1) experimental; urgency=low
+
+  * Initial release. (Closes: #850448)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Wed, 22 Mar 2017 11:13:13 +0000

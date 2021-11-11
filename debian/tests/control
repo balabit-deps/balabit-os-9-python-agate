@@ -1,0 +1,13 @@
+Test-Command: set -e
+ ; cp -r examples tests "$AUTOPKGTEST_TMP"
+ ; for py in $(py3versions -r 2>/dev/null)
+ ; do cd "$AUTOPKGTEST_TMP"
+ ; echo "Testing with $py:"
+ ; LC_ALL=C.UTF-8 LC_NUMERIC=C.UTF-8 $py -m pytest -v
+ ; done
+Depends: locales-all,
+         python3-agate,
+         python3-all,
+         python3-cssselect,
+         python3-lxml,
+         python3-pytest
